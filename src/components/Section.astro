@@ -1,0 +1,7 @@
+---
+const { children } = Astro.props
+---
+<section id={children.id} >
+    <h2>{children.tittle}</h2>
+    <slot/>
+</section>

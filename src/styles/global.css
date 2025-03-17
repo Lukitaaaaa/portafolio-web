@@ -1,10 +1,27 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #101828;
+  --color-primary-light: #2b7fff;
+  --color-secondary: #f5f5f5;
+  --color-aceent: #b84909;
+
+  --padding-section: 0 150px;
+  --padding-section-mobile: 50px;
+}
+
 html,body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(4, 4, 62, 0.813);
   color: #fff;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }

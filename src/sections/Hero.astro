@@ -1,9 +1,11 @@
 ---
+import ilustration from '../assets/ilustracion.svg';
 ---
-<section class="bg-gray-800 text-white py-20 h-screen w-full flex items-center justify-center">
-    <div class="text-center">
-      <h3 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4">Bienvenido a mi portafolio</h1>
-      <h3 class="text-lg md:text-2xl lg:text-4xl">Soy desarrollador web y me llamo <span class="text-custom-blue">Lucas Gallardo</span></h3>
+<section class="bg-gray-900 text-white p-section h-screen w-full flex items-center justify-between">
+    <div class="grid z-5">
+      <span class="text-5xl md:text-7xl">Hola, soy </span>
+      <strong class="mb-4 text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent  leading-right">Lucas Gallardo</strong>
+      <strong class="text-3xl">Diseñador web full stack</strong>
     </div>
-
+    <img src={ilustration.src} alt="Un desarrollador frente a una computadora" class="w-[400px]"/>
 </section>
