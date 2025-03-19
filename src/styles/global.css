@@ -7,7 +7,8 @@
   --color-aceent: #b84909;
 
   --padding-section: 0 150px;
-  --padding-section-mobile: 50px;
+  --padding-section-tablet: 0 100px;
+  --padding-section-mobile: 0 50px;
 }
 
 html,body {
