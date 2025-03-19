@@ -5,7 +5,8 @@
   --color-primary-light: #2b7fff;
   --color-secondary: #f5f5f5;
   --color-aceent: #b84909;
-
+ 
+  --padding-section-desktop: 0 300px;
   --padding-section: 0 150px;
   --padding-section-tablet: 0 100px;
   --padding-section-mobile: 0 50px;
@@ -26,3 +27,14 @@ h2 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
+/* #navbar-sticky {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#navbar-sticky.block {
+  transition: all 0.5s;
+  max-height: 500px; 
+} */
