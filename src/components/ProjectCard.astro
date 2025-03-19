@@ -1,14 +1,37 @@
 ---
-const { title, description, link, image } = Astro.props;
+import githubLogo from "../assets/github.svg";
+import arrowRight from "../assets/arrow-right.svg";
+const { title, description, link, image, status } = Astro.props;
 ---
 
-<article class="bg-gray-800 rounded-lg shadow-lg h-[300px] flex overflow-hidden">
-    <div class="w-1/2 p-6">
+<article class="bg-gray-800 rounded-lg shadow-lg h-[400px] flex overflow-hidden">
+    <div class="w-1/2 p-6 relative">
         <h3 class="text-3xl mb-3">{title}</h3>
-        <p class="text-balance">{description}</p>
+        <span class="absolute right-7 top-7 inline-flex items-center border text-gray-400 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+            <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+            {status}
+        </span>
+        <p class="text-balance mb-3">{description}</p>
+        <div class="flex flex-wrap align-center gap-2 mb-5">
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+            <span class="bg-primary text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Lenguaje</span>
+        </div>
+        <div class="flex align-center justify-center gap-x-4">
+            <a href="#" class="flex p-2 bg-primary rounded-lg border border-gray-300 hover:bg-purple-600 transition duration-300 ease-in-out"><img src={githubLogo.src} alt="Logo de github" class="me-3">GitHub</a>
+            { status === "Completado" ? 
+                <a href={link} class="flex p-2 bg-primary rounded-lg border border-gray-300 hover:bg-purple-600 transition duration-150 ease-in-out">
+                    <img src={arrowRight.src} alt="Flecha apuntando arriba a la izquierda" class="me-3"> Ver proyecto
+                </a> : null}
+        </div>
     </div>
     <figure class="w-1/2 p-6 bg-primary-light z-10">
-        <img src="" alt="Imagen de un proyecto" class="w-full h-full object-cover border rounded-lg shadow-xl"/>
+        <img src={image.src} alt="Imagen de un proyecto" class="w-full h-full object-contain rounded-lg"/>
 
     </figure>
 </article>
