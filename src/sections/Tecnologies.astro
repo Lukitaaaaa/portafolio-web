@@ -1,0 +1,34 @@
+---
+import astroLogo from '../assets/technologies/astro.svg';
+import bootstrapLogo from '../assets/technologies/bootstrap.svg';
+import cssLogo from '../assets/technologies/css3.svg';
+import dartLogo from '../assets/technologies/dart.svg';
+import gitLogo from '../assets/technologies/git.svg';
+import htmlLogo from '../assets/technologies/html5.svg';
+import javascriptLogo from '../assets/technologies/javascript.svg';
+import laravelLogo from '../assets/technologies/laravel.svg';
+import mysqlLogo from '../assets/technologies/mysql.svg';
+import phpLogo from '../assets/technologies/php.svg';
+import postmanLogo from '../assets/technologies/postman.svg';
+import tailwindLogo from '../assets/technologies/tailwindcss.svg';
+
+import Technologie from '../components/Technologie.astro';
+---
+<section id="tecnologies" class=" p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktop h-screen">
+    <h2 class="text-center underline underline-offset-4 decoration-aceent my-10">Tecnologías y herramientas</h2>
+
+    <div class=" flex flex-wrap justify-center  gap-4 md:gap-16">
+        <Technologie logo={laravelLogo.src} nombre="Laravel"/>
+        <Technologie logo={htmlLogo.src} nombre="HTML5"/>
+        <Technologie logo={phpLogo.src} nombre="PHP"/>
+        <Technologie logo={cssLogo.src} nombre="CSS3"/>
+        <Technologie logo={astroLogo.src} nombre="Astro"/>
+        <Technologie logo={bootstrapLogo.src} nombre="Bootstrap"/>
+        <Technologie logo={tailwindLogo.src} nombre="Tailwind"/>
+        <Technologie logo={javascriptLogo.src} nombre="JavaScript"/>
+        <Technologie logo={dartLogo.src} nombre="Dart"/>
+        <Technologie logo={mysqlLogo.src} nombre="MySQL"/>
+        <Technologie logo={postmanLogo.src} nombre="Postman"/>
+        <Technologie logo={gitLogo.src} nombre="Git"/>
+    </div>
+</section>

@@ -2,8 +2,8 @@
 import mockupLatop from "../assets/demo-project-front.png";
 import ProjectCard from "../components/ProjectCard.astro";
 ---
-<section id="projects" class="p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktop h-screen">
-    <h2 class="text-center underline underline-offset-4 decoration-aceent">Proyectos</h2>
+<section id="projects" class="p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktop">
+    <h2 class="text-center underline underline-offset-4 decoration-aceent my-10">Proyectos</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
         <!-- <article class="bg-gray-800 rounded-lg shadow-lg h-[400px] flex overflow-hidden">
             <div class="w-1/2 p-6 relative">
@@ -33,6 +33,13 @@ import ProjectCard from "../components/ProjectCard.astro";
     
             </figure>
         </article> -->
+        <ProjectCard 
+            title="Portfolio" 
+            description="este es mi portfolio que usare de ejemplo para ver como queda en la card" 
+            image={mockupLatop}
+            status="En progreso"
+            link=""
+        />
         <ProjectCard 
             title="Portfolio" 
             description="este es mi portfolio que usare de ejemplo para ver como queda en la card" 

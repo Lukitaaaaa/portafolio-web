@@ -1,0 +1,8 @@
+---
+const { nombre, logo} = Astro.props;
+---
+
+<article class="grid justify-center">
+    <img src={logo} alt={`Logo de ${nombre}`} width="64" class="mb-2">
+    <span class="text-center">{nombre}</span>
+</article>
