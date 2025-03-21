@@ -26,14 +26,3 @@ h2 {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
-/* #navbar-sticky {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
-#navbar-sticky.block {
-  transition: all 0.5s;
-  max-height: 500px; 
-} */
