@@ -1,8 +1,8 @@
-<nav class="bg-primary fixed w-full z-20 top-0 start-0 p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktop" >
+<nav class="bg-primary md:bg-primary/5 md:backdrop-blur-lg fixed w-full z-20 top-0 left-0 p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktop " >
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
         <span class="text-primary-light text-4xl text-center m-0">&ltLG/&gt  </span>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse hamburger-menu">
-            <button id="hamburger-button" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <button id="hamburger-button" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -10,18 +10,18 @@
             </button>
         </div>
         <div id="navbar-sticky" class="items-center justify-between transition-all duration-300 ease-in-out hidden w-full md:flex md:w-auto md:order-1 " >
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
                 <li>
-                <a href="#hero" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
+                    <a href="#hero" class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:hover:text-primary-light md:p-0 " aria-current="page">Inicio</a>
                 </li>
                 <li>
-                <a href="#about" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre mi</a>
+                    <a href="#about" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-light md:p-0">Sobre mi</a>
                 </li>
                 <li>
-                <a href="#projects" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Proyectos</a>
+                    <a href="#projects" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-light md:p-0">Proyectos</a>
                 </li>
                 <li>
-                <a href="#footer" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contactos</a>
+                    <a href="#contacts" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-light md:p-0">Contactos</a>
                 </li>
             </ul>
         </div>
@@ -29,7 +29,7 @@
 </nav>
 
 <style>
-@media(min-width: 640px){
+@media(min-width: 767px){
     .hamburger-menu{
         display: none;
     }

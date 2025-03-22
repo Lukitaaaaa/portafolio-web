@@ -10,6 +10,17 @@
   --padding-section: 0 150px;
   --padding-section-tablet: 0 100px;
   --padding-section-mobile: 0 50px;
+
+  --animate-navbar: down 3000ms;
+
+  @keyframes down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
 html,body {
