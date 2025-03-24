@@ -1,14 +1,11 @@
-<!-- 
-Tengo 21 años, estoy estudiando la licenciantura en informatica en la Universidad Nacional de La Plata 
-todos los conocimientos que adqueri fueron mayoritariamente de forma autodidacta creando proyectos personales 
-En la actualidad no tengo experiencia laboral pero estoy abierto a escuchar ofertas y tener la oportunidad de aprender y crecer profesionalmente   
--->
-
+---
+import portrait from '../assets/portrait.webp';
+---
 <section id="about" class="p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktops">
     <h2 class="text-center underline underline-offset-4 decoration-aceent my-10">Sobre mi</h2>
     <div class="flex flex-col lg:flex-row items-center gap-4 ">
         <figure class="aspect-square w-[150px] xl:w-[300px] rounded-full overflow-hidden shadow-lg flex-shrink-0">
-            <img src="https://avatars.githubusercontent.com/u/77490592?v=4" alt="Foto de perfil de github" class="w-full h-full object-cover"/>
+            <img src={portrait.src} alt="Foto de perfil de github" class="w-full h-full object-cover"/>
         </figure>
         <header class="max-w-[600px] md:max-w-[800px] grid gap-4">
             <p class="text-xl lg:text-2xl">Todos los conocimientos que adquirí fueron <span class="text-primary-light">mayoritariamente de forma autodidacta</span> creando proyectos personales.</p>
