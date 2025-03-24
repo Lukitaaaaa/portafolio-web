@@ -1,5 +1,5 @@
 ---
-import mockupLatop from "../assets/demo-project-front.png";
+import mockupLatop from "../assets/zafiro-page-front.webp";
 import ProjectCard from "../components/ProjectCard.astro";
 ---
 <section id="projects" class="p-section-mobile md:p-section-table lg:p-section 2xl:p-section-desktop">
@@ -34,25 +34,12 @@ import ProjectCard from "../components/ProjectCard.astro";
             </figure>
         </article> -->
         <ProjectCard 
-            title="Portfolio" 
-            description="este es mi portfolio que usare de ejemplo para ver como queda en la card" 
+            title="Zafiro" 
+            description="Una red social inspirada en Twitter, donde los usuarios pueden compartir sus pensamientos, imágenes y videos. Cuenta con un sistema de seguidores, likes y comentarios." 
             image={mockupLatop}
             status="En progreso"
-            link=""
-        />
-        <ProjectCard 
-            title="Portfolio" 
-            description="este es mi portfolio que usare de ejemplo para ver como queda en la card" 
-            image={mockupLatop}
-            status="En progreso"
-            link=""
-        />
-        <ProjectCard 
-            title="Portfolio" 
-            description="este es mi portfolio que usare de ejemplo para ver como queda en la card" 
-            image={mockupLatop}
-            status="En progreso"
-            link=""
+            linkGithub="https://github.com/Lukitaaaaa/zafiro-proyect"
+            badges={["Laravel", "Bootstrap", "PHP", "MySQL"]}
         />
     </div>
 </section>
