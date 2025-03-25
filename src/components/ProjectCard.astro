@@ -9,7 +9,7 @@ import Badge from "./Badge.astro";
 <article class="bg-gray-800 rounded-lg shadow-lg h-[800] lg:h-[400px] flex flex-col-reverse lg:flex-row overflow-hidden">
     <div class=" lg:w-1/2 p-3 sm:p-6 relative flex flex-col">
         <h3 class="text-3xl mb-3">{title}</h3>
-        <span class="absolute right-4 sm:right-7 top-4 sm:top-7 inline-flex items-center border text-gray-400 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+        <span class="absolute right-4 sm:right-7 top-4 sm:top-7 inline-flex items-center border text-gray-400 text-xs font-medium px-2.5 py-0.5 rounded-full">
             { status === "En progreso" ? <span class="w-2 h-2 me-1 bg-aceent rounded-full"></span> : <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>}
             {status}
         </span>
