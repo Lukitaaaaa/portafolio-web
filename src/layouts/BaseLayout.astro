@@ -1,17 +1,39 @@
 ---
 import '../styles/global.css';
 import Header from '../components/Header.astro';
-import Footer from '../sections/Footer.astro';
+
+import zafiroPage from '../assets/zafiro-page-front.webp';
+import ilustration from '../assets/ilustracion.svg';
 ---
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="author" content="Lucas Gallardo" />
 		<meta name="description" content="Portfolio de Lucas Gallardo" />
+		<meta name="keywords" content="Portfolio, Lucas Gallardo, Desarrollador web" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+
+		<!-- favicon -->
+		<link rel="icon" type="image/svg+xml" href="portafolio-web/favicon.ico" />
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content="Lucas Gallardo | Portfolio" />
+		<meta property="og:description" content="Descubre mis proyectos, habilidades y experiencia como desarrollador web full stack." />
+		<meta property="og:image" content="portafolio-web/preview-image.png" />
+		<meta property="og:url" content="https://Lukitaaaaa.github.io/portafolio-web/" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Lucas Gallardo | Portfolio" />
+		<meta name="twitter:description" content="Descubre mis proyectos, habilidades y experiencia como desarrollador web full stack." />
+		<meta name="twitter:image" content="portafolio-web/preview-image.png" />
+		
+		<!-- Preload -->
+		<link rel="preload" as="image" href={ilustration.src} /> 
+		<link rel="preload" as="image" href={zafiroPage.src} />
+		<title>Lucas Gallardo | Portfolio</title>
 	</head>
 	<body class="bg-primary">
 		<div class="relative h-full w-full bg-slate-950">

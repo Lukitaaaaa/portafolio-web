@@ -6,7 +6,7 @@ const { title, description, linkWebsite, linkGithub, image, status, badges} = As
 import Badge from "./Badge.astro";
 ---
 
-<article class="bg-gray-800 rounded-lg shadow-lg h-[800] lg:h-[400px] flex flex-col-reverse lg:flex-row overflow-hidden">
+<article class="bg-gray-800 rounded-lg shadow-lg h-[800] lg:h-[400px] w-full sm:w-[320px] lg:w-full flex flex-col-reverse lg:flex-row overflow-hidden">
     <div class=" lg:w-1/2 p-3 sm:p-6 relative flex flex-col">
         <h3 class="text-3xl mb-3">{title}</h3>
         <span class="absolute right-4 sm:right-7 top-4 sm:top-7 inline-flex items-center border text-gray-400 text-xs font-medium px-2.5 py-0.5 rounded-full">
@@ -28,8 +28,8 @@ import Badge from "./Badge.astro";
                 </a> : null}
         </div>
     </div>
-    <figure class=" lg:w-1/2 p-3 sm:p-6 bg-primary-light z-10">
-        <img src={image.src} alt="Imagen de un proyecto" class="w-full h-full object-contain rounded-lg"/>
+    <figure class=" lg:w-1/2 h-full bg-primary-light z-10">
+        <img src={image.src} alt="Imagen de un proyecto" loading="lazy" class="mx-auto h-full w-[320px] xl:w-[430px] object-contain"/>
 
     </figure>
 </article>
