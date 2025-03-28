@@ -1,6 +1,6 @@
 <h2 align="center">
   Portafolio Website - v2.0<br/>
-  <a href="" target="_blank">Lucas Gallardo</a>
+  <a href="https://lukitaaaaa.github.io/portafolio-web/" target="_blank">Lucas Gallardo</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./src/assets/demo-project-front.png" />
